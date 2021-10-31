@@ -26,4 +26,15 @@ describe("Operators component", () => {
       backgroundColor: "#fff",
     });
   });
+
+  it("should render correctly", () => {
+    const setOperator = jest.fn();
+    const operator = "add";
+    expect(
+      render(
+        // @ts-ignore
+        <Operators operator={operator} setOperator={setOperator} />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
 });

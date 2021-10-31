@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputVariable component should render correctly 1`] = `
+<View>
+  <TextInput
+    allowFontScaling={true}
+    clearButtonMode="while-editing"
+    keyboardType="numeric"
+    onSubmitEditing={[Function]}
+    placeholder="Numeric variable"
+    rejectResponderTermination={true}
+    returnKeyType="done"
+    style={
+      Object {
+        "backgroundColor": "#f1faee",
+        "borderRadius": 8,
+        "fontSize": 22,
+        "height": 48,
+        "margin": 12,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 1,
+        },
+        "shadowOpacity": 0.75,
+        "shadowRadius": 1,
+        "textAlign": "center",
+        "width": 192,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;

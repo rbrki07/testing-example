@@ -25,4 +25,8 @@ describe("App integration tests", () => {
     const result = queryByText("NaN");
     expect(result).not.toBe(null);
   });
+
+  it("should render correctly", () => {
+    expect(render(<App />).toJSON()).toMatchSnapshot();
+  });
 });

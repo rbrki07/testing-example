@@ -23,4 +23,11 @@ describe("InputVariable component", () => {
     fireEvent(input, "submitEditing", { nativeEvent: { text: "dhsh" } });
     expect(onSubmitEditing).not.toBeCalled();
   });
+
+  it("should render correctly", () => {
+    const onSubmitEditing = jest.fn();
+    expect(
+      render(<InputVariable onSubmitEditing={onSubmitEditing} />).toJSON()
+    ).toMatchSnapshot();
+  });
 });

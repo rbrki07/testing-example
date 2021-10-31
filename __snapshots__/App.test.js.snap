@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App integration tests should render correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "flex-start",
+    }
+  }
+>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      clearButtonMode="while-editing"
+      keyboardType="numeric"
+      onSubmitEditing={[Function]}
+      placeholder="Numeric variable"
+      rejectResponderTermination={true}
+      returnKeyType="done"
+      style={
+        Object {
+          "backgroundColor": "#f1faee",
+          "borderRadius": 8,
+          "fontSize": 22,
+          "height": 48,
+          "margin": 12,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
+          },
+          "shadowOpacity": 0.75,
+          "shadowRadius": 1,
+          "textAlign": "center",
+          "width": 192,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 48,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#f1faee",
+          "borderRadius": 8,
+          "fontSize": 22,
+          "height": 32,
+          "justifyContent": "center",
+          "margin": 4,
+          "opacity": 1,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
+          },
+          "shadowOpacity": 0.75,
+          "shadowRadius": 1,
+          "width": 32,
+        }
+      }
+    >
+      <Text>
+        +
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderRadius": 8,
+          "fontSize": 22,
+          "height": 32,
+          "justifyContent": "center",
+          "margin": 4,
+          "opacity": 1,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
+          },
+          "shadowOpacity": 0.75,
+          "shadowRadius": 1,
+          "width": 32,
+        }
+      }
+    >
+      <Text>
+        -
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderRadius": 8,
+          "fontSize": 22,
+          "height": 32,
+          "justifyContent": "center",
+          "margin": 4,
+          "opacity": 1,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
+          },
+          "shadowOpacity": 0.75,
+          "shadowRadius": 1,
+          "width": 32,
+        }
+      }
+    >
+      <Text>
+        *
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderRadius": 8,
+          "fontSize": 22,
+          "height": 32,
+          "justifyContent": "center",
+          "margin": 4,
+          "opacity": 1,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
+          },
+          "shadowOpacity": 0.75,
+          "shadowRadius": 1,
+          "width": 32,
+        }
+      }
+    >
+      <Text>
+        /
+      </Text>
+    </View>
+  </View>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      clearButtonMode="while-editing"
+      keyboardType="numeric"
+      onSubmitEditing={[Function]}
+      placeholder="Numeric variable"
+      rejectResponderTermination={true}
+      returnKeyType="done"
+      style={
+        Object {
+          "backgroundColor": "#f1faee",
+          "borderRadius": 8,
+          "fontSize": 22,
+          "height": 48,
+          "margin": 12,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 1,
+          },
+          "shadowOpacity": 0.75,
+          "shadowRadius": 1,
+          "textAlign": "center",
+          "width": 192,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text>
+    NaN
+  </Text>
+</RCTSafeAreaView>
+`;
