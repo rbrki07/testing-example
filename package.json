@@ -19,13 +19,19 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "jest-expo": "^43.0.1"
+    "@testing-library/jest-native": "^4.0.2",
+    "@testing-library/react-native": "^8.0.0",
+    "jest-expo": "^43.0.1",
+    "react-test-renderer": "^17.0.2"
   },
   "private": true,
   "jest": {
     "preset": "jest-expo",
     "transformIgnorePatterns": [
       "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
     ]
   }
 }
