@@ -10,17 +10,21 @@ import typedefs from "./../typedefs";
  * @returns {number}
  */
 const calculate = ({ a, b, operator }) => {
-  switch (operator) {
-    case "add":
-      return a * b;
-    case "substract":
-      return a - b;
-    case "multiply":
-      return a * b;
-    case "divide":
-      return a / b;
-    default:
-      return NaN;
+  if (!isNaN(a) && !isNaN(b)) {
+    switch (operator) {
+      case "add":
+        return a + b;
+      case "substract":
+        return a - b;
+      case "multiply":
+        return a * b;
+      case "divide":
+        return a / b;
+      default:
+        return NaN;
+    }
+  } else {
+    return NaN;
   }
 };
 
