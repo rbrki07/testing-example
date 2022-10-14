@@ -3,12 +3,10 @@
 exports[`InputVariable component should render correctly 1`] = `
 <View>
   <TextInput
-    allowFontScaling={true}
     clearButtonMode="while-editing"
     keyboardType="numeric"
     onSubmitEditing={[Function]}
     placeholder="Numeric variable"
-    rejectResponderTermination={true}
     returnKeyType="done"
     style={
       Object {
@@ -29,7 +27,6 @@ exports[`InputVariable component should render correctly 1`] = `
         "width": 192,
       }
     }
-    underlineColorAndroid="transparent"
   />
 </View>
 `;
