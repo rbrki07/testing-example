@@ -23,4 +23,13 @@ describe("Variables helper", () => {
     result = isNumeric({ text: "x^2" });
     expect(result).toBe(false);
   });
+
+  it("should return false for non-string types", () => {
+    // @ts-ignore
+    let result = isNumeric({ text: 123456 });
+    expect(result).toBe(false);
+    // @ts-ignore
+    result = isNumeric({ text: 47.11 });
+    expect(result).toBe(false);
+  })
 });
