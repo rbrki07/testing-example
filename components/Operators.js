@@ -26,7 +26,7 @@ const renderOperator = ({ operator }) => {
  * @param {Object} params
  * @param {typedefs.Operator} params.operator
  * @param {boolean} params.isSelected
- * @param {({operator: Operator}) => void} params.setOperator
+ * @param {(operator: typedefs.OperatorObject) => void} params.setOperator
  *
  * @returns {Object}
  */
@@ -49,7 +49,7 @@ const Operator = ({ operator, isSelected, setOperator }) => {
 /**
  * @param {Object} params
  * @param {typedefs.Operator} params.operator
- * @param {({ operator: Operator }) => void} params.setOperator
+ * @param {(operator: typedefs.OperatorObject) => void} params.setOperator
  *
  * @returns {Object}
  */

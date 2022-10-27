@@ -14,7 +14,7 @@ describe("Operators component", () => {
     );
 
     let component = getByText("+");
-    expect(component.parent.props.style).toMatchObject({
+    expect(component.parent?.props.style).toMatchObject({
       backgroundColor: "#f1faee",
     });
 
@@ -22,7 +22,7 @@ describe("Operators component", () => {
     expect(setOperator).toHaveBeenCalledWith({ operator });
 
     component = getByText("-");
-    expect(component.parent.props.style).toMatchObject({
+    expect(component.parent?.props.style).toMatchObject({
       backgroundColor: "#fff",
     });
   });
@@ -32,7 +32,6 @@ describe("Operators component", () => {
     const operator = "add";
     expect(
       render(
-        // @ts-ignore
         <Operators operator={operator} setOperator={setOperator} />
       ).toJSON()
     ).toMatchSnapshot();

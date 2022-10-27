@@ -1,11 +1,12 @@
 // @ts-check
+import typedefs from "./../typedefs";
 import React from "react";
 import { StyleSheet, TextInput, View } from "react-native";
 import { isNumeric } from "../helper/variables";
 
 /**
  * @param {Object} params
- * @param {({ variable: number }) => void} params.onSubmitEditing
+ * @param {(variable: typedefs.VariableObject) => void} params.onSubmitEditing
  *
  * @returns {Object}
  */
