@@ -14,7 +14,7 @@ describe("InputVariable component", () => {
     expect(onSubmitEditing).toBeCalledWith({ variable: 4711 });
   });
 
-  it("should NOT call `onSubmitEditing` for nonnumeric input", () => {
+  it("should NOT call `onSubmitEditing` for non-numeric input", () => {
     const onSubmitEditing = jest.fn();
     const { getByPlaceholderText } = render(
       <InputVariable onSubmitEditing={onSubmitEditing} />

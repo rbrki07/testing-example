@@ -12,7 +12,7 @@ describe("App integration tests", () => {
     fireEvent.press(operator);
     fireEvent(inputs[1], "submitEditing", { nativeEvent: { text: "2" } });
     const result = queryByText("42");
-    expect(result).not.toBe(null);
+    expect(result).toBeOnTheScreen();
   });
 
   it("should show `NaN` for wrong input", () => {
@@ -23,7 +23,7 @@ describe("App integration tests", () => {
     fireEvent.press(operator);
     fireEvent(inputs[1], "submitEditing", { nativeEvent: { text: "two" } });
     const result = queryByText("NaN");
-    expect(result).not.toBe(null);
+    expect(result).toBeOnTheScreen();
   });
 
   it("should render correctly", () => {

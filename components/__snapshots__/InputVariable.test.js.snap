@@ -9,7 +9,7 @@ exports[`InputVariable component should render correctly 1`] = `
     placeholder="Numeric variable"
     returnKeyType="done"
     style={
-      Object {
+      {
         "backgroundColor": "#f1faee",
         "borderRadius": 8,
         "fontSize": 22,
@@ -17,7 +17,7 @@ exports[`InputVariable component should render correctly 1`] = `
         "margin": 12,
         "paddingLeft": 8,
         "paddingRight": 8,
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 1,
           "width": 1,
         },

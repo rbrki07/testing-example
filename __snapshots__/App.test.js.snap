@@ -2,9 +2,8 @@
 
 exports[`App integration tests should render correctly 1`] = `
 <RCTSafeAreaView
-  emulateUnlessSupported={true}
   style={
-    Object {
+    {
       "alignItems": "center",
       "backgroundColor": "#fff",
       "flex": 1,
@@ -20,7 +19,7 @@ exports[`App integration tests should render correctly 1`] = `
       placeholder="Numeric variable"
       returnKeyType="done"
       style={
-        Object {
+        {
           "backgroundColor": "#f1faee",
           "borderRadius": 8,
           "fontSize": 22,
@@ -28,7 +27,7 @@ exports[`App integration tests should render correctly 1`] = `
           "margin": 12,
           "paddingLeft": 8,
           "paddingRight": 8,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 1,
             "width": 1,
           },
@@ -42,13 +41,30 @@ exports[`App integration tests should render correctly 1`] = `
   </View>
   <View
     style={
-      Object {
+      {
         "flexDirection": "row",
         "height": 48,
       }
     }
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
@@ -60,7 +76,7 @@ exports[`App integration tests should render correctly 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "alignItems": "center",
           "backgroundColor": "#f1faee",
           "borderRadius": 8,
@@ -71,7 +87,7 @@ exports[`App integration tests should render correctly 1`] = `
           "opacity": 1,
           "paddingLeft": 4,
           "paddingRight": 4,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 1,
             "width": 1,
           },
@@ -80,12 +96,30 @@ exports[`App integration tests should render correctly 1`] = `
           "width": 32,
         }
       }
+      testID="addOperator"
     >
       <Text>
         +
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
@@ -97,7 +131,7 @@ exports[`App integration tests should render correctly 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "alignItems": "center",
           "backgroundColor": "#fff",
           "borderRadius": 8,
@@ -108,7 +142,7 @@ exports[`App integration tests should render correctly 1`] = `
           "opacity": 1,
           "paddingLeft": 4,
           "paddingRight": 4,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 1,
             "width": 1,
           },
@@ -117,12 +151,30 @@ exports[`App integration tests should render correctly 1`] = `
           "width": 32,
         }
       }
+      testID="substractOperator"
     >
       <Text>
         -
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
@@ -134,7 +186,7 @@ exports[`App integration tests should render correctly 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "alignItems": "center",
           "backgroundColor": "#fff",
           "borderRadius": 8,
@@ -145,7 +197,7 @@ exports[`App integration tests should render correctly 1`] = `
           "opacity": 1,
           "paddingLeft": 4,
           "paddingRight": 4,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 1,
             "width": 1,
           },
@@ -154,12 +206,30 @@ exports[`App integration tests should render correctly 1`] = `
           "width": 32,
         }
       }
+      testID="multiplyOperator"
     >
       <Text>
         *
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
       accessible={true}
       collapsable={false}
       focusable={true}
@@ -171,7 +241,7 @@ exports[`App integration tests should render correctly 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "alignItems": "center",
           "backgroundColor": "#fff",
           "borderRadius": 8,
@@ -182,7 +252,7 @@ exports[`App integration tests should render correctly 1`] = `
           "opacity": 1,
           "paddingLeft": 4,
           "paddingRight": 4,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 1,
             "width": 1,
           },
@@ -191,6 +261,7 @@ exports[`App integration tests should render correctly 1`] = `
           "width": 32,
         }
       }
+      testID="divideOperator"
     >
       <Text>
         /
@@ -205,7 +276,7 @@ exports[`App integration tests should render correctly 1`] = `
       placeholder="Numeric variable"
       returnKeyType="done"
       style={
-        Object {
+        {
           "backgroundColor": "#f1faee",
           "borderRadius": 8,
           "fontSize": 22,
@@ -213,7 +284,7 @@ exports[`App integration tests should render correctly 1`] = `
           "margin": 12,
           "paddingLeft": 8,
           "paddingRight": 8,
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 1,
             "width": 1,
           },

@@ -27,10 +27,11 @@ const renderOperator = ({ operator }) => {
  * @param {typedefs.Operator} params.operator
  * @param {boolean} params.isSelected
  * @param {(operator: typedefs.OperatorObject) => void} params.setOperator
+ * @param {string} [params.testID]
  *
  * @returns {Object}
  */
-const Operator = ({ operator, isSelected, setOperator }) => {
+const Operator = ({ operator, isSelected, setOperator, testID }) => {
   return (
     <TouchableOpacity
       style={[
@@ -40,6 +41,7 @@ const Operator = ({ operator, isSelected, setOperator }) => {
           : { backgroundColor: "#fff" },
       ]}
       onPress={() => setOperator({ operator })}
+      testID={testID}
     >
       <Text>{renderOperator({ operator })}</Text>
     </TouchableOpacity>
@@ -60,21 +62,25 @@ const Operators = ({ operator, setOperator }) => {
         operator={"add"}
         isSelected={"add" === operator}
         setOperator={setOperator}
+        testID={"addOperator"}
       />
       <Operator
         operator={"substract"}
         isSelected={"substract" === operator}
         setOperator={setOperator}
+        testID={"substractOperator"}
       />
       <Operator
         operator={"multiply"}
         isSelected={"multiply" === operator}
         setOperator={setOperator}
+        testID={"multiplyOperator"}
       />
       <Operator
         operator={"divide"}
         isSelected={"divide" === operator}
         setOperator={setOperator}
+        testID={"divideOperator"}
       />
     </View>
   );

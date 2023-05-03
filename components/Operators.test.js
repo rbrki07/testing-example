@@ -1,6 +1,6 @@
 // @ts-check
 import React from "react";
-import { render, fireEvent } from "@testing-library/react-native";
+import { render, fireEvent, screen } from "@testing-library/react-native";
 import { Operators } from "./Operators";
 
 describe("Operators component", () => {
@@ -8,23 +8,19 @@ describe("Operators component", () => {
     const setOperator = jest.fn();
     let operator = "add";
 
-    const { getByText } = render(
+    const { getByTestId } = render(
       // @ts-ignore
       <Operators operator={operator} setOperator={setOperator} />
     );
 
-    let component = getByText("+");
-    expect(component.parent?.props.style).toMatchObject({
-      backgroundColor: "#f1faee",
-    });
+    let component = getByTestId("addOperator");
+    expect(component).toHaveStyle({ backgroundColor: "#f1faee" })
 
     fireEvent.press(component);
     expect(setOperator).toHaveBeenCalledWith({ operator });
 
-    component = getByText("-");
-    expect(component.parent?.props.style).toMatchObject({
-      backgroundColor: "#fff",
-    });
+    component = getByTestId("substractOperator");
+    expect(component).toHaveStyle({ backgroundColor: "#fff" })
   });
 
   it("should render correctly", () => {
